@@ -1,39 +1,39 @@
 /**
  * Aurora 主题配置文件
  * 食用指南：https://github.com/chanshiyucx/blog/issues/41
- * 联系作者：Blog https://chanshiyu.com      QQ 1124590931
+ * 联系作者：Blog https://chanshiyu.com     QQ 1124590931
  */
 
 export default {
   /**
-   * =========================================================
-   *                      站点功能【必需】
-   * =========================================================
-   */
+   * ==================================================
+   *                 站点功能【必需】
+   * ==================================================
+   **/
 
   /**
    * 站点标题
    */
-  title: '蝉時雨',
-  subtitle: '蝉鸣如雨 花宵道中',
+  title: '执笔看墨花开💜千千',
+  subtitle: '微末凡尘 心向天空',
 
   /**
    * Github Issues 配置【文章、说说、书单、友链】
    */
-  username: 'chanshiyucx', // github 用户名
+  username: 'xlzy520', // github 用户名
   repository: 'blog', // 文章仓库地址
   // token 从中间任意位置拆开成两部分，避免 github 代码检测失效
-  token: ['0ad1a0539c5b96fd18fa', 'aaafba9c7d1362a5746c'],
+  token: ['8bb4ed5265a9984c', '7cb83c34384b84a9eb7aefaa'],
 
   /**
    * Gitalk 配置【评论功能】，详细文档参见：https://github.com/gitalk/gitalk
    */
   gitalk: {
-    clientID: '864b1c2cbc4e4aad9ed8',
-    clientSecret: '6ca16373efa03347e11a96ff92e355c5cea189bb',
+    clientID: '66ec31f5cac14337fac1',
+    clientSecret: 'ac82e44a98bc60cd5fa4daca86423ae14dc1f42c',
     repo: 'comment', // 评论仓库地址
-    owner: 'chanshiyucx',
-    admin: ['chanshiyucx'],
+    owner: 'xlzy520',
+    admin: ['xlzy520'],
     distractionFreeMode: false // 是否开始无干扰模式【背景遮罩】
   },
 
@@ -41,14 +41,14 @@ export default {
    * leancloud 配置 【文章浏览次数】
    */
   leancloud: {
-    appId: 'LjOwR4ELEqbauKvtQbwq5TUw-MdYXbMMI',
-    appKey: 'BOSFJ49ohbGctgn4zvJE9VN6'
+    appId: 'wyoU1Psr7JXLhMl9RIyhpXHq-gzGzoHsz',
+    appKey: 'kN1sHizwah8DWyYjzRxBPt36'
   },
 
   /**
-   * =========================================================
-   *                        页面设置
-   * =========================================================
+   * ====================================================
+   *                     页面设置
+   * ====================================================
    */
 
   /**
@@ -111,10 +111,10 @@ export default {
   aboutOpts: {
     display: true,
     enableComment: true,
-    qoute: '蝉鸣如雨，花宵道中',
-    avatar: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/avatar.jpg',
-    graduated: 'University of Electronic Science and Technology of China (UESTC)',
-    college: 'Communication&Information Engineering',
+    qoute: '尽力而为，顺其自然',
+    avatar: 'http://pz1pbod1j.bkt.clouddn.com/71982386_p0.png?imageView2/1/w/200/h/200/q/75|imageslim',
+    graduated: 'Hangzhou Dianzi University (HDU)',
+    college: 'Computer Science',
     // 联系方式，可自由添加
     contact: [
       {
@@ -137,9 +137,9 @@ export default {
   },
 
   /**
-   * =========================================================
-   *                         主题自定义
-   * =========================================================
+   * ======================================================
+   *                      主题自定义
+   * ======================================================
    */
 
   /**

@@ -33,8 +33,7 @@
       </p>
       <p>
         Theme -
-        <a rel="noopener noreferrer" target="_blank" href="https://github.com/chanshiyucx/aurora">Aurora</a>
-        |
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/xlzy520/xlzy520">xlzy520</a> |
         {{ $config.subtitle }}
       </p>
     </div>

@@ -104,7 +104,7 @@ export default {
       // 设置缩放比例
       model.layout.width = this.waifu === 'tia' ? 1.82 : 2
       window.waifuModel = model
-      window.loadlive2d('live2d', '/live2d/', '')
+      window.loadlive2d('live2d', 'https://cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/live2d/', '')
     },
     loopTips() {
       setTimeout(this.loopTips, 16 * 1000)

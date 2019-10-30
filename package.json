@@ -8,6 +8,7 @@
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "modern": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
     "deploy": "deploy.sh",
     "report": "vue-cli-service build --report",
@@ -24,7 +25,6 @@
     "ismobilejs": "^1.0.3",
     "leancloud-storage": "^3.15.0",
     "marked": "^0.7.0",
-    "register-service-worker": "^1.6.2",
     "timeago.js": "^4.0.0-beta.2",
     "vue": "^2.6.10",
     "vue-progressbar": "^0.7.5",
@@ -35,7 +35,6 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
-    "@vue/cli-plugin-pwa": "^4.0.0",
     "@vue/cli-plugin-router": "^4.0.0",
     "@vue/cli-plugin-vuex": "^4.0.0",
     "@vue/cli-service": "^4.0.0",

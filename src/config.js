@@ -148,23 +148,23 @@ export default {
   qrcode: [
     {
       name: '支付宝',
-      img: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/zfb.png'
+      img: 'http://pzpeasb69.bkt.clouddn.com/zfb.png'
     },
     {
       name: '微信',
-      img: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/wx.png'
+      img: 'http://pzpeasb69.bkt.clouddn.com/wx.png'
     }
   ],
 
   /**
    * 加载动画
    */
-  loadingImg: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/loading.gif',
+  loadingImg: 'http://pzpeasb69.bkt.clouddn.com/loading.gif',
 
   /**
    * 文章默认图
    */
-  defaultCover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/defaultCover.jpg',
+  defaultCover: 'http://pz1pbod1j.bkt.clouddn.com/58473229.jpg?imageView2/0/format/webp/q/75|imageslim',
 
   /**
    * 音乐播放器,

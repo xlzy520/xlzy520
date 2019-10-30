@@ -6,7 +6,8 @@ import config from '../config'
  * 格式化文章
  */
 const regex = /^(.+)?\r\n\s*(.+)?\r\n/
-const coverRegex = /^\[(.+)\].*(http.*(?:jpg|jpeg|png|gif))/
+// imageslim 为七牛云图片样式标志
+const coverRegex = /^\[(.+)\].*(http.*(?:jpg|jpeg|png|gif|imageslim))/
 export const formatPost = post => {
   const { body, created_at } = post
   const result = regex.exec(body)

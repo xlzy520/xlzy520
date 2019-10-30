@@ -11,7 +11,8 @@
           @mouseenter="showTips(post)"
         >
           <div class="post-header">
-            <Cover :src="post.cover.src" :alt="post.cover.title" :loadCover="index < LOAD_INX" @loadNext="loadNext" />
+            <Cover :src="post.cover.src + cover_image_process"
+                   :alt="post.cover.title" :loadCover="index < LOAD_INX" @loadNext="loadNext" />
             <div class="post-head">
               <h3>{{ post.title }}</h3>
               <span>{{ post.cover.title }}</span>
@@ -82,7 +83,8 @@ export default {
       posts: [],
       list: [],
       times: {},
-      LOAD_INX: 4
+      LOAD_INX: 4,
+      cover_image_process: '?imageMogr2/thumbnail/430x/format/webp/blur/1x0/quality/75|imageslim'
     }
   },
   computed: {

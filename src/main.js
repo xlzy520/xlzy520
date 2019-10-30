@@ -4,6 +4,8 @@ import isMobile from 'ismobilejs'
 import VueProgressBar from 'vue-progressbar'
 import APlayer from '@moefe/vue-aplayer'
 
+import './registerServiceWorker'
+
 // Let's go!
 import App from './App.vue'
 import router from './router'

@@ -9,7 +9,6 @@ module.exports = {
       js: [
         'https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js',
         'https://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js',
-        'https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js',
       ]
     }
     config.plugin('html').tap(args => {
@@ -28,8 +27,5 @@ module.exports = {
     }
   },
   configureWebpack: {
-    externals:{
-      gitalk: 'gitalk',
-    }
   }
 }

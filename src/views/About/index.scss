@@ -35,7 +35,7 @@
 
           &:hover {
             animation-play-state: paused;
-            transform: rotateZ(360deg);
+            //transform: rotateZ(360deg);
           }
         }
         @include sp-layout {

@@ -119,19 +119,19 @@ export default {
     contact: [
       {
         icon: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/email.png',
-        link: 'http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=tNnR9Nfc1drH3N3NwZrX29k'
+        link: 'http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Z1ZXVlBfUVFWUV8nFhZJBAgK'
       },
       {
         icon: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/github.png',
-        link: 'https://github.com/chanshiyucx'
+        link: 'https://github.com/xlzy520'
       },
       {
-        icon: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/zhihu.png',
-        link: 'https://www.zhihu.com/people/ichanshiyu/activities'
+        icon: 'http://pzpeasb69.bkt.clouddn.com/favicon.ico',
+        link: 'https://space.bilibili.com/7560113'
       },
       {
         icon: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/music.png',
-        link: 'https://music.163.com/#/user/home?id=103060582'
+        link: 'https://music.163.com/#/user/home?id=69174403'
       }
     ]
   },
@@ -171,35 +171,47 @@ export default {
    */
   APlayer: [
     {
-      name: 'うたかたの风と蝉时雨',
-      artist: 'Little Planet',
-      url: 'https://files.catbox.moe/wo7zjt.mp3',
-      cover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/cover1.jpg'
+      name: '山水之间',
+      artist: '许嵩',
+      url: 'https://music.163.com/song/media/outer/url?id=28802028.mp3',
+      cover: 'http://p1.music.126.net/WoR2LbM1IFauFpvhBWOjqA==/6642149743396577.jpg?param=130y130'
     },
     {
-      name: '春の凑に',
-      artist: 'TUMENECO',
-      url: 'https://files.catbox.moe/ducy49.mp3',
-      cover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/cover2.jpg'
+      name: '春よ、来い',
+      artist: 'SMOOTH J',
+      url: 'https://music.163.com/song/media/outer/url?id=511369.mp3',
+      cover: 'http://p1.music.126.net/DWZH0eov-uLttdjzpNB26w==/6050612487861686.jpg?param=130y130'
     },
     {
-      name: '夏阳炎',
-      artist: '天威梦方',
-      url: 'https://files.catbox.moe/7migen.mp3',
-      cover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/cover3.jpg'
+      name: '我想牵着你的手',
+      artist: '许嵩',
+      url: 'https://music.163.com/song/media/outer/url?id=167903.mp3',
+      cover: 'http://p2.music.126.net/l-WSrtuUVlxINzqz6ADOOA==/45079976751178.jpg?param=130y130'
     },
     {
-      name: '秋风のとおり道',
-      artist: '风神华伝',
-      url: 'https://files.catbox.moe/b58fq6.mp3',
-      cover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/cover4.jpg'
+      name: '花のように',
+      artist: '松たか子',
+      url: 'https://music.163.com/song/media/outer/url?id=28802028.mp3',
+      cover: 'http://p1.music.126.net/048eUFnzBGOef54h84XeFg==/811439581298946.jpg?param=130y130'
     },
     {
-      name: '冬のわすれもの',
-      artist: 'ハルノカゼ',
-      url: 'https://files.catbox.moe/vwnawp.mp3',
-      cover: '//cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/cover5.jpg'
-    }
+      name: '光るなら(TV动画《四月是你的谎言》OP1 ；TVアニメ「四月は君の嘘」OP1)',
+      artist: 'Goose house',
+      url: 'https://music.163.com/song/media/outer/url?id=29732992.mp3',
+      cover: 'http://p2.music.126.net/hspOpLQKDm_ODcZj9Rd1CQ==/109951163477942900.jpg?param=200y200'
+    },
+    {
+      name: 'secret base ~君がくれたもの~ (10 years after Ver.)',
+      artist: '茅野愛衣 / 戸松遥 / 早見沙織',
+      url: 'https://music.163.com/song/media/outer/url?id=33911781.mp3',
+      cover: 'https://p1.music.126.net/6fw0sKYnqkWjisM7w7_4DQ==/109951163078058569.jpg?param=180y180'
+    },
+    {
+      name: '恋愛サーキュレーション',
+      artist: '花澤香菜',
+      url: 'https://music.163.com/song/media/outer/url?id=579954.mp3',
+      cover: 'http://p2.music.126.net/hWrYLdhzF4waj4WL1dFPmg==/642114790633458.jpg?param=130y130'
+    },
   ],
 
   /**

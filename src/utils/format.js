@@ -13,7 +13,8 @@ export const formatPost = post => {
   const cover = coverRegex.exec(result[1])
   post.cover = {
     title: cover[1] || 'defaultCover',
-    src: cover[2] || config.defaultCover
+    src: cover[2] || config.defaultCover,
+    direction: !/(\?v\')$/.test(cover.input)// 如果是v代表竖直，其他默认为水平
   }
   post.description = result[2]
   post.created_at = format(created_at, 'zh_CN').replace(/\s/, '')

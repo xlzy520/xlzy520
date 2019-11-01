@@ -11,7 +11,7 @@
           @mouseenter="showTips(post)"
         >
           <div class="post-header">
-            <Cover :src="post.cover.src + cover_image_process"
+            <Cover :src="post.cover.src + cover_image_process(post.cover.direction)"
                    :alt="post.cover.title" :loadCover="index < LOAD_INX" @loadNext="loadNext" />
             <div class="post-head">
               <h3>{{ post.title }}</h3>
@@ -84,7 +84,6 @@ export default {
       list: [],
       times: {},
       LOAD_INX: 4,
-      cover_image_process: '?imageMogr2/thumbnail/430x/format/webp/blur/1x0/quality/75|imageslim'
     }
   },
   computed: {
@@ -99,7 +98,7 @@ export default {
     },
     isDisabledNext() {
       return this.page >= this.maxPage
-    }
+    },
   },
   async created() {
     if (!this.totalCount) {
@@ -114,6 +113,11 @@ export default {
     })
   },
   methods: {
+    cover_image_process(isH){
+      return isH?
+        '?imageView2/1/w/431/h/305/format/webp/q/75|imageslim':
+        '?imageMogr2/auto-orient/thumbnail/431x/format/webp/blur/1x0/quality/75|imageslim'
+    },
     // 获取文章列表
     async queryPosts(type = 'next') {
       if (this.loading) return

@@ -46,6 +46,8 @@ $bg-dark-deep: rgba(0, 0, 0, 0.3);
 $bg-aplayer: rgba(178, 143, 206, 0.66);
 $bg-sp-color: #f4f8fb;
 $bg-dark-line: rgba(0, 0, 0, 0.08);
+$bg-tag-dark: rgba(0, 0, 0, 0.5);
+$bg-tag-dark-deep: #000;
 
 // Concat
 $concat-email-color: $purple-dark;
@@ -125,7 +127,7 @@ $block-shadow: #aaa 0px 10px 10px -10px inset, #aaa 0px -10px 10px -10px inset;
 // Image Assets
 // --------------------------------------------------
 $mobile-bg: url('https://cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/mobile.jpg');
-$aplayer-bg: url('http://pzpeasb69.bkt.clouddn.com/reimu.png?imageMogr2/thumbnail/310x/format/webp/blur/1x0/quality/75|imageslim');
+$aplayer-bg: url('http://pzpeasb69.bkt.clouddn.com/reimu.png');
 $backtop-bg: url('https://cdn.jsdelivr.net/gh/chanshiyucx/poi/2019/back-top.png');
 
 // Transition

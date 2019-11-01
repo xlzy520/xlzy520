@@ -23,11 +23,12 @@
       span {
         padding: 4px 10px 6px;
         border-radius: 3px;
-        background-color: $bg-dark;
+        background-color: $bg-tag-dark-deep;
         transition: background 0.3s ease-out;
 
         &:hover {
-          background-color: $bg-dark-deep;
+          color: #fff!important;
+          background-color: $bg-tag-dark;
         }
       }
     }

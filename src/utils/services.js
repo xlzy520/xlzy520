@@ -226,7 +226,8 @@ export const visitorStatistics = async referrer => {
     if (isDev) return resolve()
     const query = new AV.Query('Visitor')
     const Visitor = AV.Object.extend('Visitor')
-    query.equalTo('referrer', referrer)
+    const referrerHostname = referrer.hostname || '直接访问'
+    query.equalTo('referrer', referrerHostname)
     query
       .first()
       .then(res => {
@@ -239,7 +240,7 @@ export const visitorStatistics = async referrer => {
         } else {
           // 不存在则新建
           const newVisitor = new Visitor()
-          newVisitor.set('referrer', referrer)
+          newVisitor.set('referrer', referrerHostname)
           newVisitor.set('time', 1)
           newVisitor
             .save()
@@ -248,5 +249,19 @@ export const visitorStatistics = async referrer => {
         }
       })
       .catch(console.error)
+  
+    const queryVisitorDetail = new AV.Query('VisitorDetail')
+    const VisitorDetail = AV.Object.extend('VisitorDetail')
+    queryVisitorDetail.equalTo('referrer', referrer)
+    const newVisitorDetail = new VisitorDetail()
+    newVisitorDetail.set('referrer', referrer)
+    newVisitorDetail.set('ua', navigator.userAgent)
+    newVisitorDetail.set('ip', window.returnCitySN.cip)
+    newVisitorDetail.set('city', window.returnCitySN.cname)
+    newVisitorDetail
+      .save()
+      .then(() => resolve())
+      .catch(console.error)
+    
   }).catch(console.error)
 }

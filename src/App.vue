@@ -81,8 +81,7 @@ export default {
     // 统计访客来源
     visitorStatistics() {
       const referrer = getLocation(document.referrer)
-      const hostname = referrer.hostname || '直接访问'
-      this.$store.dispatch('visitorStatistics', hostname)
+      this.$store.dispatch('visitorStatistics', referrer)
     },
     // 滚动到顶部
     scrollTop() {

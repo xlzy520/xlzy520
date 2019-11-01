@@ -69,6 +69,8 @@
     .post-body {
       padding: $card-padding;
       text-align: justify;
+      display: flex;
+      flex-grow: 1;
 
       p {
         display: -webkit-box;

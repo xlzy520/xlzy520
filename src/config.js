@@ -23,7 +23,7 @@ export default {
   username: 'xlzy520', // github 用户名
   repository: 'blog', // 文章仓库地址
   // token 从中间任意位置拆开成两部分，避免 github 代码检测失效
-  token: ['8bb4ed5265a9984c', '7cb83c34384b84a9eb7aefaa'],
+  token: ['61bc742e4ca2f84f38b', '64a89b10475556965c4f3'],
 
   /**
    * Gitalk 配置【评论功能】，详细文档参见：https://github.com/gitalk/gitalk
@@ -112,7 +112,7 @@ export default {
     display: true,
     enableComment: true,
     qoute: '尽力而为，顺其自然',
-    avatar: 'http://pz1pbod1j.bkt.clouddn.com/71982386_p0.png?imageView2/1/w/200/h/200/q/75|imageslim',
+    avatar: 'http://pz1pbod1j.bkt.clouddn.com/74530542.jpg?imageView2/1/w/200/h/200/q/75|imageslim',
     graduated: 'Hangzhou Dianzi University (HDU)',
     college: 'Computer Science',
     // 联系方式，可自由添加
@@ -191,7 +191,7 @@ export default {
     {
       name: '花のように',
       artist: '松たか子',
-      url: 'https://music.163.com/song/media/outer/url?id=28802028.mp3',
+      url: 'https://music.163.com/song/media/outer/url?id=610661.mp3',
       cover: 'http://p1.music.126.net/048eUFnzBGOef54h84XeFg==/811439581298946.jpg?param=130y130'
     },
     {

@@ -1,6 +1,10 @@
 module.exports = {
   productionSourceMap: false,
   publicPath: process.env.NODE_ENV === 'production' ? `https://cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/` : '/',
+  devServer: {
+    hot: true,
+    clientLogLevel: 'warning'
+  },
   chainWebpack(config) {
     const cdn = {
       css: [
@@ -15,6 +19,8 @@ module.exports = {
       args[0].cdn = cdn
       return args
     })
+    config.resolve.alias
+      .set('@', resolve('src'));
   },
   css: {
     loaderOptions: {

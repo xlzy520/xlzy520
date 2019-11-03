@@ -4,14 +4,12 @@
       <div class="page" v-if="friend.length">
         <Quote :quote="$config.friendOpts.qoute" />
         <ul class="content">
-          <li v-for="(item, index) in friend" :key="item.name">
+          <li v-for="(item) in friend" :key="item.name">
             <a :href="item.link" rel="noopener noreferrer" target="_blank">
               <Cover
                 class="cover"
                 :src="item.cover"
                 :alt="item.name"
-                :loadCover="index < LOAD_INX"
-                @loadNext="loadNext"
               />
               <div class="info">
                 <img :src="item.avatar" alt />

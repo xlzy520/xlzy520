@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <img :src="defaultCover" alt="defaultCover" />
-    <img class="cover fadeIn" v-show="imgSrc" :src="imgSrc" :alt="alt" />
+    <img :src="defaultCover" alt="defaultCover" :class="visible?'hidden':''"/>
+    <img class="cover fadeIn" v-show="visible" :src="src" :alt="alt" @load="visible=true" />
   </div>
 </template>
 
@@ -16,37 +16,16 @@ export default {
     alt: {
       type: String,
       default: ''
-    },
-    loadCover: {
-      type: Boolean,
-      default: false
     }
   },
   data() {
     return {
       defaultCover: this.$config.defaultCover,
-      imgSrc: ''
-    }
-  },
-  watch: {
-    loadCover: {
-      immediate: true,
-      handler(val) {
-        if (val) {
-          this.loadImg()
-        }
-      }
+      visible: false
     }
   },
   methods: {
-    loadImg() {
-      const img = new Image()
-      img.onload = () => {
-        this.imgSrc = this.src
-        this.$emit('loadNext')
-      }
-      img.src = this.src
-    }
+
   }
 }
 </script>
@@ -55,6 +34,9 @@ export default {
 .wrapper {
   position: relative;
 
+  .hidden{
+    visibility: hidden;
+  }
   .cover {
     position: absolute;
     top: 0;

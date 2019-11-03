@@ -5,14 +5,14 @@
         <article
           class="cursor"
           data-aos="fade-up"
-          v-for="(post, index) in posts"
+          v-for="(post) in posts"
           :key="post.id"
           @click="gotoPost(post)"
           @mouseenter="showTips(post)"
         >
           <div class="post-header">
             <Cover :src="post.cover.src + cover_image_process(post.cover.direction)"
-                   :alt="post.cover.title" :loadCover="index < LOAD_INX" @loadNext="loadNext" />
+                   :alt="post.cover.title"/>
             <div class="post-head">
               <h3>{{ post.title }}</h3>
               <span>{{ post.cover.title }}</span>
@@ -102,9 +102,9 @@ export default {
   },
   async created() {
     if (!this.totalCount) {
-      await this.$store.dispatch('queryArchivesCount')
+      this.$store.dispatch('queryArchivesCount')
     }
-    await this.queryPosts()
+    this.queryPosts()
     AOS.init({
       duration: 2000,
       easing: 'ease',

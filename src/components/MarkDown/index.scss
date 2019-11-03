@@ -1,7 +1,12 @@
+:root{
+  --primary-color: #1296db
+}
 .markdown {
   text-align: justify;
   font-size: $font-size-normal;
   line-height: $line-height-block;
+  background: rgba(255,255,255,.5);
+  padding: 25px 0;
 
   .loading {
     position: relative;

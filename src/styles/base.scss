@@ -270,3 +270,9 @@ td.hljs-ln-numbers {
     }
   }
 }
+
+#tp-weather-widget{
+  @media (max-width: 776px) {
+    display: none;
+  }
+}

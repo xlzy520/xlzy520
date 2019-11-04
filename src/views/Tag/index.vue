@@ -80,7 +80,11 @@ export default {
     }
   },
   async created() {
-    await this.queryTag()
+    const { tag } = this.$route.params
+    if (tag) {
+      this.handleFilter(tag)
+    }
+    this.queryTag()
     this.initComment = true
   },
   methods: {

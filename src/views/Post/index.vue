@@ -24,7 +24,8 @@
               </span>
               <span>
                 <i class="icon icon-tag"></i>
-                <span v-for="label in post.labels" :key="label.id">{{ label.name }}</span>
+                <span style="cursor: pointer" v-for="label in post.labels"
+                      :key="label.id" @click="toTag(label)">{{ label.name }}</span>
               </span>
             </div>
           </div>
@@ -81,6 +82,9 @@ export default {
     async queryHot() {
       const hot = await this.$store.dispatch('increaseHot', { post: this.post })
       this.$set(this.post, 'times', hot)
+    },
+    toTag(tag){
+      this.$router.push({ name: 'tag', params: { tag: tag.name } })
     }
   }
 }

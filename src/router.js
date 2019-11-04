@@ -34,7 +34,7 @@ export default new Router({
       component: Category
     },
     {
-      path: '/tag',
+      path: '/tag/:tag',
       name: 'tag',
       component: Tag
     },

@@ -171,16 +171,40 @@ export default {
    */
   APlayer: [
     {
-      name: '山水之间',
-      artist: '许嵩',
-      url: 'https://music.163.com/song/media/outer/url?id=28802028.mp3',
-      cover: 'http://p1.music.126.net/WoR2LbM1IFauFpvhBWOjqA==/6642149743396577.jpg?param=130y130'
+      name: '三年幻想郷',
+      artist: '神乃木製作所',
+      url: 'https://music.163.com/song/media/outer/url?id=767452.mp3',
+      cover: 'http://p1.music.126.net/QdxRMFtZCNkTsvJtNfpHpg==/565148976688829.jpg?param=130y130'
+    },
+    {
+      name: '水面の満月',
+      artist: '神乃木製作所',
+      url: 'https://music.163.com/song/media/outer/url?id=767726.mp3',
+      cover: 'http://p2.music.126.net/7AvaL3kt8uaC-ouLOr1C4w==/664105023188835.jpg?param=130y130'
+    },
+    {
+      name: '素直と不器用と意地っ張り',
+      artist: '三輪学',
+      url: 'https://music.163.com/song/media/outer/url?id=478095.mp3',
+      cover: 'http://p2.music.126.net/RIOvUtQejxeI5S2sP_nmiw==/3434874333355654.jpg?param=130y130'
+    },
+    {
+      name: '比翼の羽根',
+      artist: 'eufonius',
+      url: 'https://music.163.com/song/media/outer/url?id=718551.mp3',
+      cover: 'http://p2.music.126.net/c5-mvashaLJseFBwP3md4A==/109951163351769650.jpg?param=130y130'
     },
     {
       name: '春よ、来い',
       artist: 'SMOOTH J',
       url: 'https://music.163.com/song/media/outer/url?id=511369.mp3',
       cover: 'http://p1.music.126.net/DWZH0eov-uLttdjzpNB26w==/6050612487861686.jpg?param=130y130'
+    },
+    {
+      name: '山水之间',
+      artist: '许嵩',
+      url: 'https://music.163.com/song/media/outer/url?id=28802028.mp3',
+      cover: 'http://p1.music.126.net/WoR2LbM1IFauFpvhBWOjqA==/6642149743396577.jpg?param=130y130'
     },
     {
       name: '我想牵着你的手',

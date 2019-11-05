@@ -10,7 +10,7 @@ const externals = ()=>{
 }
 module.exports = {
   productionSourceMap: false,
-  publicPath: process.env.NODE_ENV === 'production' ? `https://cdn.jsdelivr.net/gh/xlzy520/xlzy520.github.io/` : '/',
+  publicPath: isProd ? `/` : '/',
   devServer: {
     hot: true,
     clientLogLevel: 'warning'
@@ -21,14 +21,14 @@ module.exports = {
         'https://fonts.googleapis.com/css?family=Fira+Mono|Noto+Serif+SC&display=swap',
       ],
       js: [
+        'https://cdn.jsdelivr.net/gh/chanshiyucx/poi/js/live2d.min.js',
         'https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js',
-        'https://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js',
+        'https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.17/jquery.backstretch.min.js'
       ]
     }
     if (isProd) {
-      cdn.js.concat([
-        'https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js',
-        'https://cdn1.lncld.net/static/js/3.0.4/av-min.js'
+      cdn.js = cdn.js.concat([
+        'https://cdn1.lncld.net/static/js/3.0.4/av-min.js',
       ])
     }
     config.plugin('html').tap(args => {

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home'
+// import Home from './views/Home'
 import Post from './views/Post'
 import Archive from './views/Archive'
 import Category from './views/Category'
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: ()=>import('./views/Home')
     },
     {
       path: '/post/:number',

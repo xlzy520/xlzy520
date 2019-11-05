@@ -164,7 +164,7 @@ export default {
   /**
    * 文章默认图
    */
-  defaultCover: 'http://pz1pbod1j.bkt.clouddn.com/58473229.jpg?imageView2/0/format/webp/q/75|imageslim',
+  defaultCover: 'http://pz1pbod1j.bkt.clouddn.com/58473229.jpg?imageView2/0/format/webp/q/50|imageslim',
 
   /**
    * 音乐播放器,

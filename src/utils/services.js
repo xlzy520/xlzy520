@@ -222,15 +222,15 @@ export const visitorStatistics = async referrer => {
         }
       })
       .catch(console.error)
-  
     const queryVisitorDetail = new AV.Query('VisitorDetail')
     const VisitorDetail = AV.Object.extend('VisitorDetail')
-    queryVisitorDetail.equalTo('referrer', referrer)
-    const newVisitorDetail = new VisitorDetail()
-    newVisitorDetail.set('referrer', referrer)
-    newVisitorDetail.set('ua', navigator.userAgent)
-    newVisitorDetail.set('ip', window.returnCitySN.cip)
-    newVisitorDetail.set('city', window.returnCitySN.cname)
+    queryVisitorDetail.equalTo('referrer', document.referrer)
+    const newVisitorDetail = new VisitorDetail({
+      referrer: document.referrer,
+      ua: navigator.userAgent,
+      ip: window.returnCitySN.cip,
+      city: window.returnCitySN.cname
+    })
     newVisitorDetail
       .save()
       .then(() => resolve())

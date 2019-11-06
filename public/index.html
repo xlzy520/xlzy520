@@ -23,8 +23,8 @@
     <% for(var js of htmlWebpackPlugin.options.cdn.js) { %>
     <script src="<%=js%>"></script>
     <% } %>
-    <link href="https://pv.sohu.com/cityjson?ie=utf-8" as="script">
-    <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js" as="script">
+    <link href="https://pv.sohu.com/cityjson?ie=utf-8" rel="prefetch" as="script">
+    <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js" rel="preload" as="script">
     <title>执笔看墨花开💜千千</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
         We're sorry but aurora doesn't work properly without JavaScript enabled. Please enable it to continue.
       </strong>
     </noscript>
-    <div id="bg" style="background-image: url(http://pz1pbod1j.bkt.clouddn.com/69873977.jpg?imageView2/0/format/webp/interlace/1/q/10);background-position: center;"></div>
+    <div id="bg" style="background-image: url(http://pz1pbod1j.bkt.clouddn.com/69873977.jpg?imageView2/0/format/webp/interlace/1/q/50);background-position: center;"></div>
     <div id="app"></div>
     <div id="tp-weather-widget"></div>
     <script>

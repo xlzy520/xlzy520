@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <img :src="defaultCover" alt="defaultCover" :class="visible?'hidden':''"/>
-    <img class="cover fadeIn" v-show="visible" :src="src" :alt="alt" @load="visible=true" />
+    <img class="default-cover" :src="defaultCover" alt="defaultCover" :class="visible?'hidden':''" @load="loadImage"/>
+    <img class="cover fadeIn" v-show="visible" :src="showSrc" :alt="cover.alt" @load="visible=true" />
   </div>
 </template>
 
@@ -9,23 +9,26 @@
 export default {
   name: 'MagicImg',
   props: {
-    src: {
-      type: String,
-      default: ''
+    cover: {
+      type: Object,
+      required: true,
+      default: ()=>({src: '',alt: '', direction: true }) // 默认横屏图片
     },
-    alt: {
-      type: String,
-      default: ''
-    }
   },
   data() {
     return {
       defaultCover: this.$config.defaultCover,
-      visible: false
+      visible: false,
+      showSrc: ''
     }
   },
   methods: {
-
+    loadImage(){
+      const defaultCover =document.querySelector('.default-cover')
+      const width = defaultCover.width
+      const height = '_' + defaultCover.height +'h'
+      this.showSrc = this.cover.src + `@${width}w${this.cover.direction?height: ''}_1e_1c.webp`
+    }
   }
 }
 </script>

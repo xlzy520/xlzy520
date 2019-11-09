@@ -11,8 +11,7 @@
           @mouseenter="showTips(post)"
         >
           <div class="post-header">
-            <Cover :src="post.cover.src + cover_image_process(post.cover.direction)"
-                   :alt="post.cover.title"/>
+            <Cover :cover="post.cover" />
             <div class="post-head">
               <h3>{{ post.title }}</h3>
               <span>{{ post.cover.title }}</span>
@@ -115,8 +114,8 @@ export default {
   methods: {
     cover_image_process(isH){
       return isH?
-        '?imageView2/1/w/431/h/305/format/webp/q/75|imageslim':
-        '?imageMogr2/auto-orient/thumbnail/431x/format/webp/blur/1x0/quality/75|imageslim'
+        '@431w_305h_1e_1c.webp':
+        '@431w_1e_1c.webp'
     },
     // 获取文章列表
     async queryPosts(type = 'next') {

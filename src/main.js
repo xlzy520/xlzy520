@@ -75,7 +75,7 @@ console.info(
   'color:#63cb4e;'
 )
 const imgStyle = { height: 1400 / 4, width: 792 / 4 }
-const url = 'https://i.loli.net/2019/09/06/RdZ3tj7s4g6boKh.jpg'
+const url = 'https://i0.hdslb.com/bfs/album/3fe66f13d7684fc1b451f05a1c349ac4e972bab6.jpg@1e_1c.webp'
 const consoleImageCss = [
   'padding: ' + (imgStyle.height / 2 - 8) + 'px ' + imgStyle.width / 2 + 'px;',
   'line-height: ' + imgStyle.height + 'px;',

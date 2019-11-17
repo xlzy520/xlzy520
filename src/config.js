@@ -148,11 +148,11 @@ export default {
   qrcode: [
     {
       name: '支付宝',
-      img: 'http://pzpeasb69.bkt.clouddn.com/zfb.png'
+      img: 'https://i0.hdslb.com/bfs/album/6c5015061df9f2a3db9c98dea366a1a45408ef45.png@1e_1c.webp'
     },
     {
       name: '微信',
-      img: 'http://pzpeasb69.bkt.clouddn.com/wx.png'
+      img: 'https://i0.hdslb.com/bfs/album/0be95edda50ca691c3f2207a594459f1d258c0bf.png@1e_1c.webp'
     }
   ],
 

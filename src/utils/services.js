@@ -7,9 +7,7 @@ const GITHUB_API = 'https://api.github.com/repos'
 
 const { username, repository, token } = config
 const blog = `${GITHUB_API}/${username}/${repository}`
-const access_token = token.join('')
-const open = `state=open&access_token=${access_token}`
-const closed = `state=closed&access_token=${access_token}`
+const access_token = `token ${token.join('')}`
 const isDev = /^(192\.168|localhost)/.test(window.location.host)
 
 // 状态检测
@@ -20,6 +18,23 @@ const checkStatus = response => {
   throw error
 }
 
+// github fetch
+const githubFetch = async (url, isQueryPage = false) => {
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        Authorization: access_token
+      }
+    })
+    checkStatus(response)
+    const data = await response.json()
+    return isQueryPage ? data[0] : data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 // 构建 GraphQL
 const createCall = async document => {
   try {
@@ -27,7 +42,7 @@ const createCall = async document => {
     const response = await fetch(GRAPHQL_URL, {
       method: 'POST',
       headers: {
-        Authorization: `token ${access_token}`
+        Authorization: access_token
       },
       body: payload
     })
@@ -49,55 +64,40 @@ export const queryInspirationCount = () => createCall(documents.queryInspiration
 export const queryFilterArchivesCount = ({ label, milestone }) =>
   createCall(documents.queryFilterArchivesCount({ username, repository, label, milestone }))
 
-// Github Fetch
-export const githubFetch = async (url, isQueryPage=false)=>{
-  try {
-    const response = await fetch(url)
-    checkStatus(response)
-    const data = await response.json()
-    if (isQueryPage) {
-      return data[0]
-    }
-    return data
-  } catch (err) {
-    console.log(err)
-  }
-}
-
 // 获取文章列表
-export const queryPosts = async ({ page = 1, pageSize = 10, filter = '' }) => {
-  const url = `${blog}/issues?${open}&page=${page}&per_page=${pageSize}${filter}`
+export const queryPosts = ({ page = 1, pageSize = 10, filter = '' }) => {
+  const url = `${blog}/issues?state=open&page=${page}&per_page=${pageSize}${filter}`
   return githubFetch(url)
 }
 
 // 获取单篇文章
-export const queryPost = async number => {
-  const url = `${blog}/issues/${number}?${open}`
+export const queryPost = number => {
+  const url = `${blog}/issues/${number}?state=open`
   return githubFetch(url)
 }
 
 // 获取分类
-export const queryCategory = async () => {
-  const url = `${blog}/milestones?access_token=${access_token}`
+export const queryCategory = () => {
+  const url = `${blog}/milestones`
   return githubFetch(url)
 }
 
 // 获取标签
-export const queryTag = async () => {
-  const url = `${blog}/labels?access_token=${access_token}&page=1&per_page=100`
+export const queryTag = () => {
+  const url = `${blog}/labels?page=1&per_page=100`
   return githubFetch(url)
 }
 
 // 获取灵感
-export const queryInspiration = async ({ page = 1, pageSize = 10 }) => {
-  const url = `${blog}/issues?${closed}&labels=inspiration&page=${page}&per_page=${pageSize}`
+export const queryInspiration = ({ page = 1, pageSize = 10 }) => {
+  const url = `${blog}/issues?state=closed&labels=inspiration&page=${page}&per_page=${pageSize}`
   return githubFetch(url)
 }
 
 // 获取书单 & 友链 & 关于
-export const queryPage = async type => {
+export const queryPage = type => {
   const upperType = type.replace(/^\S/, s => s.toUpperCase())
-  const url = `${blog}/issues?${closed}&labels=${upperType}`
+  const url = `${blog}/issues?state=closed&labels=${upperType}`
   return githubFetch(url, true)
 }
 

@@ -178,7 +178,6 @@ export const queryLike = async type => {
               .catch(console.error)
           }
         } else {
-          // 不存在则新建
           const newcounter = new Counter()
           newcounter.set('title', 'site')
           newcounter.set('time', 1)
@@ -211,7 +210,6 @@ export const visitorStatistics = async referrer => {
             .then(() => resolve())
             .catch(console.error)
         } else {
-          // 不存在则新建
           const newVisitor = new Visitor()
           newVisitor.set('referrer', referrerHostname)
           newVisitor.set('time', 1)

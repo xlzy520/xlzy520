@@ -1,5 +1,5 @@
 /**
- * @description 生成范围内随机整数
+ * 生成范围内随机整数
  */
 export const random = (a, b) => parseInt(Math.random() * (b - a + 1) + a, 10)
 
@@ -53,17 +53,58 @@ export const parseTime = (time, format = '{y}-{m}-{d} {h}:{i}:{s}') => {
 }
 
 /**
- * @param {string} key
- * @param {string} value
+ * 写入缓存
  */
 export const localSave = (key, value) => {
   localStorage.setItem(key, value)
 }
 
 /**
- * @param {string} key
- * @param {string} defaultValue
+ * 读取缓存
  */
 export const localRead = (key, defaultValue = '') => {
   return localStorage.getItem(key) || defaultValue
+}
+
+/**
+ * 图片 cdn 加速
+ */
+const isMe = location.host.includes('chanshiyu.com')
+const GithubPrefix = 'raw.githubusercontent.com/chanshiyucx/yoi/master'
+const JSDriverPrefix = 'cdn.jsdelivr.net/gh/chanshiyucx/yoi@latest'
+export const fileCDN = url => {
+  if (isMe && url.includes(GithubPrefix)) {
+    return url.replace(GithubPrefix, JSDriverPrefix)
+  }
+  return url
+}
+
+/**
+ * 图片尺寸处理
+ */
+export const handleImg = href => {
+  const urlParams = new URLSearchParams(href.split('?')[1])
+  const vw = urlParams.get('vw')
+  const vh = urlParams.get('vh')
+  const clientWidth = document.querySelector('main').clientWidth
+
+  // 是否预设尺寸
+  let style = ''
+  let width = vw
+  let height = vh
+  let isFull = false
+  if (width) {
+    if (width > clientWidth) {
+      width = clientWidth
+      isFull = true
+    }
+    style += `width: ${width}px;`
+
+    // 在设置宽度的情况下判断高度
+    if (height) {
+      height = (height * width) / vw
+      style += `height: ${height}px;`
+    }
+  }
+  return { style, isFull }
 }

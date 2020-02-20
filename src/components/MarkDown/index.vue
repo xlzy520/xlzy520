@@ -6,9 +6,12 @@
 import marked from 'marked'
 import Zooming from 'zooming'
 import hljs from '@/assets/lib/highlight'
+import { fileCDN, handleImg } from '@/utils'
+
+let IMGID = 0
 
 const zooming = new Zooming({
-  bgOpacity: 0.6,
+  bgOpacity: 0.8,
   zIndex: 100
 })
 
@@ -22,27 +25,32 @@ renderer.heading = function(text, level, raw, slugger) {
 }
 
 renderer.image = function(href, title, text) {
-  const id = `loading-${loadingId}`
-  loadingId++
+  href = fileCDN(href)
 
+  IMGID++
+  const id = `img-${IMGID}`
   const img = new Image()
   img.src = href
   img.onload = () => {
     const dom = document.getElementById(id)
-    dom.style.display = 'none'
+    dom.src = href
+    dom.style.opacity = 1
   }
 
-  return `<span class="img-box">
-  <span id="${id}" class="loading">
-    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  const { style, isFull } = handleImg(href)
+
+  return `<span class="img-box ${isFull ? 'full' : ''}">
+  <span class="bg" style="${style}">
+    <span class="loading">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </span>
   </span>
-  <img class="img-zoomable cursor" src="${href}" loading="lazy" alt="${text}" />${
-    text ? `<span>◭ ${text}</span>` : ''
+  <img id="${id}" class="img-zoomable cursor" style="${style}"  loading="lazy" alt="${text}" />${
+    text ? `<span class="title">◭ ${text}</span>` : ''
   }</span>`
 }
 
 renderer.link = function(href, title, text) {
-  // 只显示一个图标
   if (text.includes('icon')) {
     return `<a href="${href}" target="_blank">${text}</a>`
   }

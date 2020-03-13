@@ -42,7 +42,8 @@ export default {
    */
   leancloud: {
     appId: 'wyoU1Psr7JXLhMl9RIyhpXHq-gzGzoHsz',
-    appKey: 'kN1sHizwah8DWyYjzRxBPt36'
+    appKey: 'kN1sHizwah8DWyYjzRxBPt36',
+    serverURLs: 'https://g58zbduk.lc-cn-n1-shared.com'
   },
 
   /**

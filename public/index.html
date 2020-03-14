@@ -9,8 +9,8 @@
     <meta name="author" content="执笔看墨花开💜千千" />
     <meta name="description" content="微末凡尘 心向天空" />
     <meta name="keywords" content="Code, xlzy520, 执笔看墨花开💜千千" />
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicon.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="<%= BASE_URL %>assets/apple-touch-icon-144x144.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="<%= BASE_URL %>assets/favicon-256x256.png" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="canonical" href="https://xlzy520.cn" />
     <meta name="baidu-site-verification" content="DN3rafzeEO" />
@@ -31,7 +31,7 @@
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
-    <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
     <!-- 引入JS -->
     <% for(var js of htmlWebpackPlugin.options.cdn.js) { %>
     <script src="<%=js%>"></script>

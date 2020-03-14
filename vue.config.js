@@ -22,7 +22,7 @@ module.exports = {
       ],
       js: [
         'https://cdn.jsdelivr.net/gh/chanshiyucx/aurora/public/live2d/live2d.min.js',
-        'https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js',
+        'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js',
         'https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.17/jquery.backstretch.min.js'
       ]
     }

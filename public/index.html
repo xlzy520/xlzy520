@@ -22,6 +22,15 @@
     <% for(var css of htmlWebpackPlugin.options.cdn.css) { %>
     <link rel="stylesheet" href="<%=css%>" />
     <% } %>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?308d8313ec16f721670ef77465d6aff6";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
     <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
     <!-- 引入JS -->
     <% for(var js of htmlWebpackPlugin.options.cdn.js) { %>

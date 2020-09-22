@@ -28,7 +28,7 @@ module.exports = {
     }
     if (isProd) {
       cdn.js = cdn.js.concat([
-        'https://cdn1.lncld.net/static/js/3.0.4/av-min.js',
+        'https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js',
       ])
     }
     config.plugin('html').tap(args => {

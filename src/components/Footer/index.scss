@@ -1,7 +1,6 @@
-#footer {
+footer {
   position: absolute;
   bottom: 0;
-  margin: auto 0;
   width: 100%;
 
   .prpr {
@@ -16,7 +15,6 @@
     .waifu {
       position: relative;
       height: 250px;
-      transform: translateY(3px);
 
       .tips {
         position: absolute;
@@ -68,8 +66,6 @@
           width: 50px;
           list-style: none;
           text-align: center;
-          border-top-right-radius: 3px;
-          border-bottom-right-radius: 3px;
           overflow: hidden;
 
           li {

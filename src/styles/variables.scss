@@ -9,6 +9,7 @@ $purple: #d68fe9;
 $purple-dark: #b28fce;
 $purple-dim: #986db2;
 $purple-deep: #b854d4;
+$brown: #795548;
 
 // Scaffolding
 // Settings for some of the most global styles.
@@ -67,6 +68,11 @@ $loading-color-five: #88cfff;
 $sakura-color: #e87a90;
 $sakura-color-light: #fedfe1;
 
+// Code
+$code-color-red: #fc625d;
+$code-color-yello: #fdbc40;
+$code-color-green: #35cd4b;
+
 // Typography
 // Font, line-height, and elements colors.
 // --------------------------------------------------
@@ -118,11 +124,12 @@ $code-padding: 12px 14px;
 // Shadow
 // --------------------------------------------------
 $card-shadow: 0 0 2px 0 $bg-dark, 0px 2px 2px 0 $bg-dark-dim;
+$card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.16);
 $card-shadow-base: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
 $card-shadow-base-hover: 0 10px 20px $bg-dark-dim, 0 6px 6px $bg-dark-deep;
 $card-shadow-light: 0 14px 38px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.06);
 $card-shadow-light-hover: 0 14px 38px rgba(0, 0, 0, 0.14), 0 3px 8px rgba(0, 0, 0, 0.12);
-$block-shadow: #aaa 0px 10px 10px -10px inset, #aaa 0px -10px 10px -10px inset;
+$block-shadow: #ccc 0px 10px 10px -10px inset, #ccc 0px -10px 10px -10px inset;
 $img-shadow: rgba(0, 0, 0, 0.2) 0 10px 12px;
 
 // Image Assets

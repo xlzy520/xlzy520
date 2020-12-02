@@ -1,12 +1,11 @@
-import hljs from 'highlight.js/lib/highlight'
+import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
-import typescript from 'highlight.js/lib/languages/typescript'
 import xml from 'highlight.js/lib/languages/xml'
-import scss from 'highlight.js/lib/languages/scss'
+import less from 'highlight.js/lib/languages/less'
 import css from 'highlight.js/lib/languages/css'
 import java from 'highlight.js/lib/languages/java'
 import python from 'highlight.js/lib/languages/python'
-import shell from 'highlight.js/lib/languages/shell'
+import objectivec from 'highlight.js/lib/languages/objectivec'
 import markdown from 'highlight.js/lib/languages/markdown'
 import bash from 'highlight.js/lib/languages/bash'
 import json from 'highlight.js/lib/languages/json'
@@ -20,15 +19,15 @@ linenumber(hljs)
 // 按需导入高亮语种
 hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('xml', xml)
-hljs.registerLanguage('scss', scss)
+hljs.registerLanguage('less', less)
 hljs.registerLanguage('css', css)
 hljs.registerLanguage('java', java)
 hljs.registerLanguage('python', python)
+hljs.registerLanguage('objectivec', objectivec)
 hljs.registerLanguage('markdown', markdown)
 hljs.registerLanguage('bash', bash)
 hljs.registerLanguage('json', json)
-hljs.registerLanguage('typescript', typescript)
-hljs.registerLanguage('shell', shell)
+hljs.registerLanguage('http', http)
 
 hljs.initHighlightingOnLoad()
 

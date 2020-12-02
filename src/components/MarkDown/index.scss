@@ -1,6 +1,3 @@
-:root{
-  --primary-color: #1296db
-}
 .markdown {
   text-align: justify;
   font-size: $font-size-normal;
@@ -9,10 +6,9 @@
   .loading {
     position: relative;
     width: 100%;
-    height: 0px;
     margin: 0 auto;
     text-align: center;
-    transform: translateY(10px);
+    transform: translateY(50%);
 
     .dot {
       display: inline-block;
@@ -102,6 +98,52 @@
     margin-bottom: 25px;
   }
 
+  pre {
+    position: relative;
+    padding: 36px 0 0;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      height: 12px;
+      width: 12px;
+      background: $code-color-red;
+      border-radius: 50%;
+      box-shadow: 20px 0 $code-color-yello, 40px 0 $code-color-green;
+    }
+
+    &:hover {
+      .code-copy {
+        opacity: 1;
+      }
+    }
+
+    code {
+      padding-bottom: 10px;
+      padding-left: 12px;
+    }
+
+    .code-copy {
+      opacity: 0;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      height: 36px;
+      width: 36px;
+      font-size: $font-size-large;
+      line-height: 32px;
+      text-align: center;
+      color: #888;
+      transition: all ease 0.3s;
+      &:hover {
+        color: $purple;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
   ol {
     margin: 25px 16px 25px 62px;
   }
@@ -143,27 +185,7 @@
   }
 
   a {
-    position: relative;
-    color: $link-color;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1.5px;
-      background-color: $link-color;
-      transform: scaleX(0);
-      transform-origin: bottom right;
-      transition: transform 0.3s ease-out;
-    }
-    &:hover {
-      &::after {
-        transform-origin: bottom left;
-        transform: scaleX(1);
-      }
-    }
+    @include link;
   }
 
   blockquote {
@@ -198,39 +220,45 @@
   }
 
   span[class*='img-box'] {
+    position: relative;
     display: block;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
     text-align: center;
+    border-radius: 3px;
 
-    &:last-child {
-      margin-bottom: 0;
+    &.full {
+      margin: 0 -16px;
+      .bg,
+      img {
+        border-radius: unset;
+      }
+    }
+
+    .bg {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      max-width: 100%;
+      border-radius: 3px;
+      background-color: $bg-dark;
+      transform: translateX(-50%);
     }
 
     img {
+      position: relative;
       margin: 0 auto;
       max-width: 100%;
+      opacity: 0;
       border-radius: 3px;
-      box-shadow: $img-shadow;
-      border: 6px solid transparent;
-      transition: all 0.3s ease-out;
-      &:hover {
-        border-color: $purple-dark;
-      }
-    }
-    img[src*='full'] {
-      margin-left: -16px;
-      width: calc(100% + 32px);
-      max-width: calc(100% + 32px);
-      border: none;
-      border-radius: unset;
+      overflow: hidden;
+      box-shadow: $card-shadow;
+      transition: all 0.3s ease-out, opacity 0.8s ease-out;
     }
 
-    img[style*='cursor: grab'] {
-      border-color: transparent;
-      border-radius: unset;
-    }
-
-    span {
+    .title {
       display: block;
       padding-top: 8px;
       font-style: italic;
@@ -241,9 +269,10 @@
     margin: 0 16px 25px;
     max-width: 100%;
     overflow-x: auto;
+    @include scrollBar;
 
     & > table {
-      margin: 0 auto 16px;
+      margin: 0 auto;
       border-radius: 3px;
       border-spacing: 2px;
       border-collapse: separate;

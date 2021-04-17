@@ -23,7 +23,7 @@
 import { mapState } from 'vuex'
 import Loading from '@/components/Loading'
 import Quote from '@/components/Quote'
-import ArchiveCard from '@/components/Archive'
+import ArchiveCard from '@/components/ArchiveCard'
 import Comment from '@/components/Comment'
 
 export default {

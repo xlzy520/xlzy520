@@ -8,9 +8,9 @@ footer {
     left: 0;
     bottom: 0;
     z-index: $zindex-3;
-    @include sp-layout {
-      display: none;
-    }
+    //@include sp-layout {
+    //  display: none;
+    //}
 
     .waifu {
       position: relative;

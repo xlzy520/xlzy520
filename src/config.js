@@ -165,7 +165,7 @@ export default {
   /**
    * 文章默认图
    */
-  defaultCover: 'https://i0.hdslb.com/bfs/album/a707edf425f0bf5ec557d687e4ef45fa6c82eada.jpg',
+  defaultCover: 'https://i0.hdslb.com/bfs/album/555a4057a7a7cdaf078699f62caee174c4d13202.jpg',
 
   /**
    * 音乐播放器,

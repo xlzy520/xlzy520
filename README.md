@@ -12,3 +12,5 @@
 - 💐 贡献过：[Echarts](https://github.com/apache/echarts), [PicGo](https://github.com/Molunerfinn/PicGo)
 - 🏫 杭州电子科技大学 计算机学院  软件工程
 - ✉️ 1017866168@qq.com
+
+![:name](https://count.getloli.com/get/@xlzy520)

@@ -1,6 +1,6 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
 
-<img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=f9bf45&text_color=f9bf45&bg_color=ffffff&hide_title=true" />
+<img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />
 
 <img align="right" height="160" src="https://count.getloli.com/get/@xlzy520" alt="xlzy520" />
 

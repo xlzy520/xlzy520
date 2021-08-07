@@ -3,7 +3,11 @@
 <img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />
 
 <img align="right" height="160" src="https://count.getloli.com/get/@xlzy520" alt="xlzy520" />
+<div>
+<img aligin="right" src="https://img.shields.io/badge/%E5%A5%B3%E5%84%BF%E5%B0%8F%E6%A9%98%E5%AD%90-5%E4%B8%AA%E6%9C%88%E5%95%A6-orange" />
 <img aligin="right" src="https://img.shields.io/badge/npm--downloads-11781-brightgreen" />
+</div>
+
 
 ---
 - :orange_book:  主业前端，会后端，业余时折腾各种技术 ...

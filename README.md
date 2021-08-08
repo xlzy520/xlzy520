@@ -7,6 +7,7 @@
 <img aligin="right" src="https://img.shields.io/badge/%E5%A5%B3%E5%84%BF%E5%B0%8F%E6%A9%98%E5%AD%90-5%E4%B8%AA%E6%9C%88%E5%95%A6-orange" />
 <img aligin="right" src="https://img.shields.io/badge/npm--downloads-11781-brightgreen" />
   <img aligin="right" src="https://img.shields.io/badge/Bilibili%20fans-200-%23fb7299" />
+    <img aligin="right" src="https://img.shields.io/badge/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7-1200-brightgreen" />
 </div>
 
 

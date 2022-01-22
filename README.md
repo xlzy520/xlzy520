@@ -12,7 +12,8 @@
 
 
 ---
-:orange_book:  主业前端React、Vue，会点后端Java、Node，业余时折腾各种技术 ...
+- :orange_book:  前端React、Vue
+- :orange_book: 后端Java、Node，业余时折腾各种技术 ...
 - 👨‍👩‍👧 有一个宝贝女儿小橘子，10个月啦
 - :ram:  知识面广，热爱开源，喜欢折腾，喜欢分享
 - :hammer:  学习一些底层，补一些算法

@@ -24,3 +24,4 @@
 - 🏫 杭州电子科技大学 计算机学院  软件工程
 - ✉️ 1017866168@qq.com
 
+![](https://raw.githubusercontent.com/xlzy520/xlzy520/main/assets/github-contribution-grid-snake.svg)

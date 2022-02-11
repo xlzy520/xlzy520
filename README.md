@@ -1,4 +1,5 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
+- ✉️ ONES 内推（早十晚七双休冲呀）：1017866168@qq.com
 
 <img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />
 
@@ -22,6 +23,5 @@
 - 💸 资深白嫖用户，善于利用各种技术进行白嫖
 - ✈️ 性能优化强迫症患者，慢是不可以忍受的啊
 - 🏫 杭州电子科技大学 计算机学院  软件工程
-- ✉️ 1017866168@qq.com
 
 ![](https://raw.githubusercontent.com/xlzy520/xlzy520/main/assets/github-contribution-grid-snake.svg)

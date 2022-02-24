@@ -1,5 +1,5 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
-✉️ ONES 内推（早十晚七双休冲呀）：1017866168@qq.com
+✉️ ONES 内推（早十晚六双休冲呀）：1017866168@qq.com
 ![](https://i0.hdslb.com/bfs/album/7e7c920cd2aa816fb205ff313fb48e38464e821e.png)
 <div>
     

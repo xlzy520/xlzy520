@@ -1,6 +1,6 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
+# 最近沉迷性能优化中...
 ✉️ ONES 内推（早十晚六双休冲呀）：1017866168@qq.com
-![](https://i0.hdslb.com/bfs/album/7e7c920cd2aa816fb205ff313fb48e38464e821e.png)
 <div>
     
 <img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />
@@ -16,8 +16,8 @@
 
 ---
 - :orange_book:  前端React、Vue
-- :orange_book: 后端Java、Node，业余时折腾各种技术 ...
-- 👨‍👩‍👧 有一个宝贝女儿小橘子，11个月啦
+- :orange_book: 后端Java、Node，各种技术 ...
+- 👨‍👩‍👧 有一个宝贝女儿小橘子，13个月啦
 - :ram:  涉猎广泛，热爱开源，喜欢折腾，喜欢分享
 - :hammer:  学习一些底层，补一些算法
 - 😧 手写代码的能力有点弱呀，补一补吧

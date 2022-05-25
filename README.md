@@ -1,5 +1,5 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
-# 最近沉迷性能优化中...
+# 最近沉迷性能优化中...[性能优化记录](https://www.yuque.com/xlzy520/lgfyg2/tfiadk)
 ✉️ ONES 内推（早十晚六双休冲呀）：1017866168@qq.com
 <div>
     

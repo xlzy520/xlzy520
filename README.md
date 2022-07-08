@@ -14,8 +14,8 @@
 
 
 ---
-- :orange_book:  前端React、Vue
-- :orange_book: 后端Java、Node，各种技术 ...
+- :orange_book:  React、Vue、小程序
+- :orange_book: Java、Node，mongoDB、MySQL，Docker...
 - 👨‍👩‍👧 有一个宝贝女儿小橘子，一岁多啦
 - :ram:  涉猎广泛，热爱开源，喜欢折腾，喜欢分享
 - :hammer:  学习一些底层，补一些算法

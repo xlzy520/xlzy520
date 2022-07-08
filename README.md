@@ -14,7 +14,7 @@
 
 
 ---
-- :orange_book:  React、Vue、小程序
+- :orange_book:  React、Vue(2、3)、小程序
 - :orange_book: Java、Node，mongoDB、MySQL，Docker...
 - 👨‍👩‍👧 有一个宝贝女儿小橘子，一岁多啦
 - :ram:  涉猎广泛，热爱开源，喜欢折腾，喜欢分享

@@ -1,5 +1,5 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
-# 最近沉迷性能优化中...[性能优化记录](https://www.yuque.com/xlzy520/lgfyg2/tfiadk)
+# 沉迷性能优化中...
 <div>
     
 <img align="right" height="160" src="https://github-readme-stats.vercel.app/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />

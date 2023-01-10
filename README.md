@@ -15,7 +15,7 @@
 
 
 ---
-- :orange_book:  React、Vue(2+3)、小程序、Java、Node...
+- :orange_book:  React、Vue(2+3)、小程序、浏览器插件、Java、Node...
 - :ram:  涉猎广泛，热爱开源，喜欢折腾，喜欢分享
 - :hammer:  学习一些底层，补一些算法
 - 🌄 喜欢利用各种技术解决自己或他人的问题

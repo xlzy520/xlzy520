@@ -22,6 +22,7 @@
 - 💸 资深白嫖用户，善于利用各种技术进行白嫖
 - ✈️ 性能优化强迫症患者，慢是不可以忍受的啊
 - 🏫 HDU 软件工程
+- contributors: [echarts](https://github.com/apache/echarts)、[X6](https://github.com/antvis/X6)、[zh.javascript.info](https://github.com/javascript-tutorial/zh.javascript.info)、[PicGo-Core](https://github.com/PicGo/PicGo-Core)
   
   </div>
 

@@ -1,5 +1,4 @@
 ### Hi👋 I am xlzy520(执笔看墨花开）
-### 马上30岁前退休
 <div>
     
 <img align="right" height="160" src="https://github-stats.liuli.lol/api?username=xlzy520&show_icons=true&icon_color=fb7299&text_color=fb7299&bg_color=ffffff&hide_title=true" />
@@ -20,9 +19,7 @@
 - :ram:  涉猎广泛，热爱开源，喜欢折腾，喜欢分享
 - :hammer:  学习一些底层，补一些算法
 - 🌄 喜欢利用各种技术解决自己或他人的问题
-- 💸 资深白嫖用户，善于利用各种技术进行白嫖
 - ✈️ 性能优化强迫症患者，慢是不可以忍受的啊
-- 🏫 HDU 软件工程
 - contributors: [echarts](https://github.com/apache/echarts)、[X6](https://github.com/antvis/X6)、[zh.javascript.info](https://github.com/javascript-tutorial/zh.javascript.info)、[PicGo-Core](https://github.com/PicGo/PicGo-Core)
   
   </div>
